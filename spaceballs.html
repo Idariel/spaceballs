@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<lang="fr">
+  <head>
+    <title>Space Balls</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" media="screen" type="text/css" title="Space Balls" href="spaceballs.css" >
+    <link href='https://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="spaceballs.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <div id="titreJeu">
+      <h1>Space Balls</h1>
+      <p>Ce jeu a été réalisé avec Node JS et MongoDB.</p>
+      <p>Vous devriez pouvoir jouer jusqu'à 2 joueurs l'un contre l'autre.</p><br />
+      <p class="footnote">Code sur gitHub :
+      https://github.com/Idariel/crazyballs.</p>
+
+      <form class="user">
+        <h2>Joueur</h2>
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pseudo : </label><input type="text" name="pseudo" placeholder="Votre pseudo" required/><br/>
+          <label>Mot de passe : </label><input type="password" name="password" placeholder="Votre mot de passe" required/><br/><br/>
+          <input class="submit" type="submit" value="S'enregistrer" />
+          insert.Joueurs.
+      </form>
+
+      <p>Vous êtes {{nombreJoueurs}} joueurs connectés :</p>
+
+      <p>
+        {{#each user}}
+          {{> nomJoueur}}
+        {{/each}}
+      </p>
+
+      <button>Commencer à jouer</button>
+    </div>
+
+  </body>
+
+</template>
+
+<!-- <template name="avatar">
+  <p>{{avatar}}</p>
+</template> -->
+
+<!-- <template name="gaucheHaut">
+  <div id="gaucheHaut">
+  </div>
+</template>
+
+<template name="gaucheBas">
+  <div id="gaucheBas">
+  </div>
+</template>
+
+<template name="droiteHaut">
+  <div id="droiteHaut">
+  </div>
+</template>
+
+<template name="droiteBas">
+  <div id="droiteBas">
+  </div>
+</template>
+
+<template name="terrainDeJeu">
+  <div id="terrainDeJeu">
+    <div id="bumper">
+    </div>
+  </div>
+</template> -->
